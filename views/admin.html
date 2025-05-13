@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard</title>
+  <style>
+    body {
+      background-color: black;
+      color: #00ff00;
+      font-family: 'Courier New', monospace;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      height: 100vh;
+      padding: 20px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    table {
+      width: 80%;
+      margin-top: 30px;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid #00ff00;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #333;
+    }
+
+    tr:nth-child(even) {
+      background-color: #444;
+    }
+
+    .button {
+      background-color: #007bff;
+      color: white;
+      padding: 5px 10px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: #0056b3;
+    }
+
+    .form-container {
+      margin-top: 30px;
+      width: 80%;
+      background-color: #333;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .form-container input,
+    .form-container textarea {
+      width: 100%;
+      padding: 8px;
+      margin: 5px 0;
+      background-color: #222;
+      color: #00ff00;
+      border: 1px solid #00ff00;
+    }
+
+    .form-container button {
+      padding: 8px 15px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .form-container button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+  <h1>🛡️ Admin Dashboard</h1>
+  <p>Welcome, Admin. This is a protected area.</p>
+
+  <!-- Table to display projects -->
+  <h2>Project List</h2>
+  <table id="projects">
+    <thead>
+      <tr>
+        <th>Project ID</th>
+        <th>Country</th>
+        <th>Transaction Date</th>
+        <th>Details</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Rows will be inserted dynamically using JavaScript -->
+    </tbody>
+  </table>
+
+  <!-- Form to add a new project -->
+  <div class="form-container">
+    <h2>Add New Project</h2>
+    <form id="addProjectForm">
+      <input type="text" id="country" placeholder="Country" required />
+      <input type="date" id="transactionDate" required />
+      <textarea id="details" placeholder="Project Details" required></textarea>
+      <button type="submit">Add Project</button>
+    </form>
+  </div>
+
+  <script>
+    // Example project data (replace with dynamic data from your server)
+    const projects = [
+      { id: 1, country: 'USA', transactionDate: '2025-05-10', details: 'Project details 1' },
+      { id: 2, country: 'Canada', transactionDate: '2025-06-01', details: 'Project details 2' },
+    ];
+
+    // Function to display projects in the table
+    function displayProjects() {
+      const tbody = document.querySelector('#projects tbody');
+      tbody.innerHTML = ''; // Clear the table before rendering
+
+      projects.forEach((project) => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+          <td>${project.id}</td>
+          <td>${project.country}</td>
+          <td>${project.transactionDate}</td>
+          <td>${project.details}</td>
+          <td>
+            <button class="button" onclick="editProject(${project.id})">Edit</button>
+            <button class="button" onclick="deleteProject(${project.id})">Delete</button>
+          </td>
+        `;
+        tbody.appendChild(row);
+      });
+    }
+
+    // Edit project function (you can add more logic for editing)
+    function editProject(projectId) {
+      alert(`Edit project with ID: ${projectId}`);
+      // Implement edit functionality (e.g., open a form to edit project details)
+    }
+
+    // Delete project function
+    function deleteProject(projectId) {
+      const confirmDelete = confirm(`Are you sure you want to delete project with ID: ${projectId}?`);
+      if (confirmDelete) {
+        // Remove project from the projects array
+        const projectIndex = projects.findIndex(project => project.id === projectId);
+        if (projectIndex > -1) {
+          projects.splice(projectIndex, 1);
+          displayProjects();
+        }
+      }
+    }
+
+    // Add new project function
+    document.getElementById('addProjectForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const newProject = {
+        id: projects.length + 1, // Generate a simple ID for the new project
+        country: document.getElementById('country').value,
+        transactionDate: document.getElementById('transactionDate').value,
+        details: document.getElementById('details').value,
+      };
+
+      projects.push(newProject);
+      displayProjects();
+
+      // Clear the form
+      document.getElementById('addProjectForm').reset();
+    });
+
+    // Display the initial projects
+    displayProjects();
+  </script>
+</body>
+</html>

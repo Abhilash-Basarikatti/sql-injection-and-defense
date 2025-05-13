@@ -1,0 +1,209 @@
+[2025-05-09 10:57] IP: ::1, Suspicious Input -> Username: "admin' OR '1'='1", Password: "password"
+[2025-05-09 10:57] IP: ::1, Suspicious Input -> Username: "admin' OR 1=1 --", Password: "password2"
+[2025-05-09 10:58] IP: ::1, Suspicious Input -> Username: "' OR 1=1 --", Password: "password2"
+[2025-05-09 10:58] IP: ::1, Suspicious Input -> Username: "admin'--", Password: "password2"
+[2025-05-09 10:58] IP: ::1, Suspicious Input -> Username: "admin'--", Password: "password2"
+[2025-05-09 10:58] IP: ::1, Suspicious Input -> Username: "admin'/*", Password: "password2"
+[2025-05-09 10:58] IP: ::1, Suspicious Input -> Username: "admin' OR '1'='1", Password: "password2"
+[2025-05-09 11:02] IP: ::1, Suspicious Input -> Username: "'admin '--'", Password: "password2"
+[2025-05-09 11:03] IP: ::1, Suspicious Input -> Username: "'admin ' --", Password: "password2"
+[2025-05-09 11:04] IP: ::1, Suspicious Input -> Username: "admin' -- ", Password: "12"
+[2025-05-09 11:04] IP: ::1, Suspicious Input -> Username: "admin' #", Password: "12"
+[2025-05-09 11:04] IP: ::1, Suspicious Input -> Username: "admin'/*", Password: "12"
+[2025-05-09 11:05] IP: ::1, Suspicious Input -> Username: "admin'/*", Password: "123"
+[2025-05-09 11:05] IP: ::1, Suspicious Input -> Username: " ' OR 1=1 --", Password: "1234"
+[2025-05-09 11:05] IP: ::1, Suspicious Input -> Username: "'OR 1=1 --", Password: "1234"
+[2025-05-09 11:05] IP: ::1, Suspicious Input -> Username: " 'OR 1=1 --", Password: "1234"
+[2025-05-09 11:05] IP: ::1, Suspicious Input -> Username: " ' OR 'a'='a", Password: "1234"
+[2025-05-09 11:06] IP: ::1, Suspicious Input -> Username: " ' UNION SELECT 1, 'admin', 'admin123' -- ", Password: "1"
+[2025-05-09 11:06] IP: ::1, Suspicious Input -> Username: " admin'; DROP TABLE users; --", Password: "1"
+[2025-05-09 11:06] IP: ::1, Suspicious Input -> Username: " admin'; DROP TABLE users; --", Password: "12"
+[2025-05-09 11:07] IP: ::1, Suspicious Input -> Username: " admin' AND SLEEP(5) --", Password: "1"
+[2025-05-09 11:08] IP: ::1, Suspicious Input -> Username: "admin' --", Password: "1"
+[2025-05-09 11:08] IP: ::1, Suspicious Input -> Username: "admin' --", Password: "1234"
+[2025-05-09 11:08] IP: ::1, Suspicious Input -> Username: "admin' OR '1'='1", Password: "1234"
+[2025-05-09 11:08] IP: ::1, Suspicious Input -> Username: "admin' #", Password: "1234"
+[2025-05-09 11:09] IP: ::1, Suspicious Input -> Username: "' OR EXISTS(SELECT * FROM users WHERE username='admin') --", Password: "1234"
+[2025-05-09 11:09] IP: ::1, Suspicious Input -> Username: "' or 1=1#", Password: "1234"
+[2025-05-09 11:09] IP: ::1, Suspicious Input -> Username: "' or 1=1#", Password: "1234"
+[2025-05-09 11:09] IP: ::1, Suspicious Input -> Username: "' or 1=1#", Password: "1234"
+[2025-05-09 11:09] IP: ::1, Suspicious Input -> Username: "' or 1=1#", Password: "1234"
+[2025-05-09 11:17] IP: ::1, Suspicious Input -> Username: "' OR EXISTS(SELECT * FROM users WHERE username='admin') --", Password: "123"
+[2025-05-09 11:18] IP: ::1, Suspicious Input -> Username: "' OR '1'='1' --", Password: "123"
+[2025-05-09 11:18] IP: ::1, Suspicious Input -> Username: "' OR '1'='1' --", Password: "12"
+[2025-05-09 11:21] IP: ::1, Suspicious Input -> Username: "' or 1=1/*", Password: "12"
+[2025-05-09 11:21] IP: ::1, Suspicious Input -> Username: "' OR '1'='1'/*", Password: "12"
+[2025-05-09 11:21] IP: ::1, Suspicious Input -> Username: "admin'; DROP TABLE users; --", Password: "12"
+[2025-05-09 11:22] IP: ::1, Suspicious Input -> Username: "admin') OR ('1'='1", Password: "12"
+[2025-05-09 11:22] IP: ::1, Suspicious Input -> Username: "admin') OR ('1'='1", Password: "12"
+[2025-05-09 11:23] IP: ::1, Suspicious Input -> Username: "' OR EXISTS(SELECT * FROM users)", Password: "12"
+[2025-05-09 11:27] IP: ::1, Suspicious Input -> Username: "' OR ''='", Password: "1"
+[2025-05-09 11:27] IP: ::1, Suspicious Input -> Username: "' OR ''='", Password: "1"
+[2025-05-09 11:28] IP: ::1, Suspicious Input -> Username: "admin' OR ''='", Password: "1"
+[2025-05-09 11:28] IP: ::1, Suspicious Input -> Username: "admin' OR 1=1 --", Password: "1"
+[2025-05-09 11:28] IP: ::1, Suspicious Input -> Username: "admin ' OR 1=1 --", Password: "1"
+[2025-05-09 11:28] IP: ::1, Suspicious Input -> Username: "' OR '1'='1'/*", Password: "1"
+[2025-05-09 11:28] IP: ::1, Suspicious Input -> Username: "admin' OR '1'='1'/*", Password: "1"
+[2025-05-09 11:52] IP: ::1, Suspicious Input -> Username: "admin' OR '1'='1", Password: "112"
+[2025-05-09 12:38] IP: ::1, Suspicious Input -> Username: "admin' OR '1'='1", Password: "123"
+[2025-05-09 12:39] IP: ::1, Suspicious Input -> Username: "admin' OR '1'='1", Password: "123"
+[2025-05-09 20:14] IP: ::1, Suspicious Input -> Username: "admin' OR '1'='1", Password: "1234"
+[2025-05-09 20:17] IP: ::1, Suspicious Input -> Username: "admin' OR '1'='1", Password: "1234"
+[2025-05-09 23:42] IP: ::1, Suspicious Input -> Username: "admin' #", Password: "12"
+[2025-05-09 23:42] IP: ::1, Suspicious Input -> Username: "admin'/*", Password: "12"
+[2025-05-09 23:49] IP: ::1, Suspicious Input -> Username: "admin' OR '1'='1", Password: "1234"
+[2025-05-09 23:51] IP: ::1, Suspicious Input -> Username: "' OR 1=1 --", Password: "1"
+[2025-05-09 23:51] IP: ::1, Suspicious Input -> Username: "admin' OR 1=1 --", Password: "1"
+[2025-05-09 23:51] IP: ::1, Suspicious Input -> Username: "' OR 'a'='a", Password: "12"
+[2025-05-09 23:51] IP: ::1, Suspicious Input -> Username: "' OR 'a'='a", Password: "1"
+[2025-05-09 23:51] IP: ::1, Suspicious Input -> Username: "admin' OR 'a'='a", Password: "1"
+[2025-05-09 23:52] IP: ::1, Suspicious Input -> Username: "admin' OR '1'='1", Password: "1"
+[2025-05-09 23:52] IP: ::1, Suspicious Input -> Username: " admin') OR ('1'='1", Password: "1"
+[2025-05-09 23:53] IP: ::1, Suspicious Input -> Username: "' OR '1'='1' --", Password: "1"
+[2025-05-09 23:53] IP: ::1, Suspicious Input -> Username: "admin' OR '1'='1' --", Password: "1"
+[2025-05-09 23:53] IP: ::1, Suspicious Input -> Username: "' OR '1'='1' --", Password: "1"
+[2025-05-09 23:54] IP: ::1, Suspicious Input -> Username: "admin' OR '1'='1' --", Password: "1"
+[2025-05-09 23:55] IP: ::1, Suspicious Input -> Username: "' OR '1'='1'#", Password: "1"
+[2025-05-09 23:55] IP: ::1, Suspicious Input -> Username: "' OR '1'='1'/*", Password: "1"
+[2025-05-09 23:55] IP: ::1, Suspicious Input -> Username: "admin' OR '1'='1'/*", Password: "1"
+[2025-05-09 23:55] IP: ::1, Suspicious Input -> Username: "admin')--", Password: "1"
+[2025-05-09 23:56] IP: ::1, Suspicious Input -> Username: "' or 1=1 limit 1 --", Password: "1"
+[2025-05-09 23:56] IP: ::1, Suspicious Input -> Username: "admin' or 1=1 limit 1 --", Password: "1"
+[2025-05-09 23:57] IP: ::1, Suspicious Input -> Username: "' OR ''='", Password: "1"
+[2025-05-09 23:57] IP: ::1, Suspicious Input -> Username: "admin' OR ''='", Password: "1"
+[2025-05-09 23:57] IP: ::1, Suspicious Input -> Username: "' or 1=1--", Password: "1"
+[2025-05-09 23:57] IP: ::1, Suspicious Input -> Username: "admin' or 1=1--", Password: "1"
+[2025-05-09 23:57] IP: ::1, Suspicious Input -> Username: "' OR 1=1 ORDER BY 1--", Password: "1"
+[2025-05-09 23:58] IP: ::1, Suspicious Input -> Username: "admin' OR 1=1 ORDER BY 1--", Password: "1"
+[2025-05-09 23:59] IP: ::1, Suspicious Input -> Username: "admin' or 1 = 1#", Password: "1"
+[2025-05-10 0:00] IP: ::1, Suspicious Input -> Username: "or 1 = 1 --", Password: "1"
+[2025-05-10 0:00] IP: ::1, Suspicious Input -> Username: "1 or "& ( " or 1 = 1 -- 1", Password: "12"
+[2025-05-10 0:01] IP: ::1, Suspicious Input -> Username: " 1 or "& ( " or 1 = 1 -- 1", Password: "12"
+[2025-05-10 0:01] IP: ::1, Suspicious Input -> Username: " 1 or "? ( " or 1 = 1 -- 1", Password: "1"
+[2025-05-10 0:01] IP: ::1, Suspicious Input -> Username: " '1' * ( \ ) or 1 = 1 -- 1'", Password: "1"
+[2025-05-10 0:01] IP: ::1, Suspicious Input -> Username: " 1 or \.<\ or 1 = 1 -- 1", Password: "1"
+[2025-05-10 0:02] IP: ::1, Suspicious Input -> Username: " 1 or "%?" or 1 = 1 -- 1", Password: "1"
+[2025-05-10 9:01] IP: ::1, Suspicious Input -> Username: "admin' OR '1'='1", Password: "1234"
+[2025-05-10 9:21] IP: ::1, Suspicious Input -> Username: "admin' OR '1'='1", Password: "123"
+[2025-05-10 9:28] IP: ::1, Suspicious Input -> Username: "admin' OR '1'='1", Password: "1233"
+[2025-05-10 9:34] IP: ::1, Suspicious Input -> Username: "admin' OR '1'='1", Password: "admin123"
+[2025-05-10 9:41] IP: ::1, Suspicious Input -> Username: "' UNION SELECT username, password FROM admin_table --", Password: "admin123"
+[2025-05-10 10:23] IP: ::1, Suspicious Input -> Username: "admin' OR '1'='1", Password: "1234"
+[2025-05-10 10:27] IP: ::1, Suspicious Input -> Username: "admin' or 1 = 1# ", Password: "1"
+[2025-05-10 10:29] IP: ::1, Suspicious Input -> Username: "admin' or 1 = 1#", Password: "12"
+[2025-05-10 22:47] IP: ::1, Username: "admin' or 1 = 1#", Password: "123", AttackType: Unknown
+[2025-05-10 22:49] IP: ::1, Username: "admin' or 1 = 1", Password: "123", AttackType: Unknown
+[2025-05-10 22:50] IP: ::1, Username: "admin' or 1 = 1#", Password: "12", AttackType: Unknown
+[2025-05-12 9:38] IP: ::1, Username: "admin' or 1 = 1#", Password: "12", AttackType: Tautology
+[2025-05-12 9:39] IP: ::1, Username: "' OR ''='", Password: "12", AttackType: Inference / Blind
+[2025-05-12 9:40] IP: ::1, Username: "' UNION SELECT 1, 'admin', 'admin123' --", Password: "12", AttackType: Union-based
+[2025-05-12 12:02] IP: ::1, Username: "admin' or 1 = 1#", Password: "123", AttackType: Tautology
+[2025-05-12 12:07] IP: ::1, Username: "admin' or 1 = 1#", Password: "123", AttackType: Tautology
+[2025-05-12 12:07] IP: ::1, Username: "admin' or 1 = 1#", Password: "123", AttackType: Tautology
+[2025-05-12 12:15] IP: ::1, Username: "admin' or 1 = 1#", Password: "1", AttackType: Tautology
+[2025-05-12 12:16] IP: ::1, Username: "admin' or 1 = 1#", Password: "1", AttackType: Tautology
+[2025-05-12 12:16] IP: ::1, Username: "admin' or 1 = 1#", Password: "123", AttackType: Tautology
+[2025-05-12 12:17] IP: ::1, Username: "admin' or 1 = 1#", Password: "123", AttackType: Tautology
+[2025-05-12 12:24] IP: ::1, Username: "admin' or 1 = 1#", Password: "123", AttackType: Tautology
+[2025-05-12 12:27] IP: ::1, Username: "admin' or 1 = 1#", Password: "1", AttackType: Tautology
+[2025-05-12 12:27] IP: ::1, Username: "admin' or 1 = 1#", Password: "1", AttackType: Tautology
+[2025-05-12 12:55] IP: ::1, Username: "admin' or 1 = 1#", Password: "1", AttackType: Tautology
+[2025-05-12 12:55] IP: ::1, Username: "admin' or 1 = 1#", Password: "1", AttackType: Tautology
+[2025-05-12 20:20] IP: ::1, Username: "admin' or 1 = 1#", Password: "1", AttackType: Tautology
+[2025-05-12 22:14] IP: ::1, Username: "admin' or 1 = 1#", Password: "admin123", AttackType: Tautology
+[2025-05-12 22:15] IP: ::1, Username: "admin' or 1 = 1#", Password: "12", AttackType: Tautology
+[2025-05-12 22:16] IP: ::1, Username: "admin' or 1 = 1#", Password: "123", AttackType: Tautology
+[2025-05-12 22:18] IP: ::1, Username: "admin' or 1 = 1#", Password: "admin123", AttackType: Tautology
+[2025-05-12 23:11] IP: ::1, Username: "admin' #", Password: "1", AttackType: Inference / Blind
+[2025-05-12 23:11] IP: ::1, Username: "admin'/* ", Password: "1", AttackType: Inference / Blind
+[2025-05-12 23:11] IP: ::1, Username: "admin' OR 'a'='a", Password: "1", AttackType: Inference / Blind
+[2025-05-12 23:12] IP: ::1, Username: "' OR 1=1 --", Password: "1", AttackType: Tautology
+[2025-05-12 23:12] IP: ::1, Username: "admin' OR 1=1 --", Password: "1", AttackType: Tautology
+[2025-05-12 23:12] IP: ::1, Username: "admin' OR '1=1' --", Password: "1", AttackType: Tautology
+[2025-05-12 23:12] IP: ::1, Username: "admin' OR '1=1'", Password: "1", AttackType: Tautology
+[2025-05-12 23:13] IP: ::1, Username: "' OR '1'='1'# ", Password: "1", AttackType: Inference / Blind
+[2025-05-12 23:13] IP: ::1, Username: "' OR ''=' ", Password: "1", AttackType: Inference / Blind
+[2025-05-12 23:13] IP: ::1, Username: "admin' OR ''=' ", Password: "1", AttackType: Inference / Blind
+[2025-05-12 23:16] IP: ::1, Username: "' AND 1=2 --", Password: "1", AttackType: Inference / Blind
+[2025-05-12 23:16] IP: ::1, Username: "admin' AND 1=2 --", Password: "1", AttackType: Inference / Blind
+[2025-05-12 23:16] IP: ::1, Username: "	%27%20OR%201=1--", Password: "1", AttackType: Inference / Blind
+[2025-05-12 23:35] IP: ::1, Username: "admin' or 1 = 1#", Password: "1", AttackType: Tautology
+[2025-05-12 23:35] IP: ::1, Username: "' OR '1'='1'/*", Password: "1", AttackType: Inference / Blind
+[2025-05-12 23:35] IP: ::1, Username: "' OR '1'='1'/*", Password: "1", AttackType: Inference / Blind
+[2025-05-12 23:35] IP: ::1, Username: "' OR '1'='1'/*", Password: "1", AttackType: Inference / Blind
+[2025-05-12 23:36] IP: ::1, Username: "' OR '1'='1'/*", Password: "1", AttackType: Inference / Blind
+[2025-05-12 23:36] IP: ::1, Username: "' OR '1'='1'/*", Password: "1", AttackType: Inference / Blind
+[2025-05-12 23:41] IP: ::1, Username: "admin' AND 1/0 -- ", Password: "1", AttackType: Inference / Blind
+[2025-05-12 23:41] IP: ::1, Username: "admin' AND 1/0 -- ", Password: "1", AttackType: Inference / Blind
+[2025-05-12 23:41] IP: ::1, Username: "admin' AND 1/0 -- ", Password: "1", AttackType: Inference / Blind
+[2025-05-12 23:41] IP: ::1, Username: "admin' AND 1/0 -- ", Password: "1", AttackType: Inference / Blind
+[2025-05-12 23:43] IP: ::1, Username: "admin' AND 1=1 AND non_existent_column = 'value", Password: "1", AttackType: Tautology
+[2025-05-12 23:46] IP: ::1, Username: "' UNION SELECT DATABASE() -- ", Password: "1", AttackType: Union-based
+[2025-05-12 23:49] IP: ::1, Username: "' UNION SELECT DATABASE() -- ", Password: "1", AttackType: Union-based
+[2025-05-12 23:50] IP: ::1, Username: "' UNION SELECT 1, GROUP_CONCAT(table_name) FROM information_schema.tables -- &", Password: "1", AttackType: Union-based
+[2025-05-12 23:54] IP: ::1, Username: " ' UNION SELECT null, null, database()--", Password: "1", AttackType: Union-based
+[2025-05-12 23:57] IP: ::1, Username: " ' UNION SELECT null, null, database()--", Password: "1", AttackType: Union-based
+[2025-05-12 23:57] IP: ::1, Username: " ' UNION SELECT null, null, database()--", Password: "1", AttackType: Union-based
+[2025-05-12 23:58] IP: ::1, Username: " ' UNION SELECT null, null,null, database()--", Password: "1", AttackType: Union-based
+[2025-05-12 23:58] IP: ::1, Username: " ' UNION SELECT null, null,null, null,database()--", Password: "1", AttackType: Union-based
+[2025-05-12 23:59] IP: ::1, Username: " ' UNION SELECT null,database()--", Password: "1", AttackType: Union-based
+[2025-05-12 23:59] IP: ::1, Username: " ' UNION SELECT database()--", Password: "1", AttackType: Union-based
+[2025-05-13 0:00] IP: ::1, Username: " ' UNION SELECT database()--", Password: "1", AttackType: Union-based
+[2025-05-13 0:01] IP: ::1, Username: "' UNION SELECT null, database()-- ", Password: "1", AttackType: Union-based
+[2025-05-13 0:02] IP: ::1, Username: "' UNION SELECT null, NULL,database()-- ", Password: "1", AttackType: Union-based
+[2025-05-13 0:02] IP: ::1, Username: "' UNION SELECT null, NULL,database()-- ", Password: "1", AttackType: Union-based
+[2025-05-13 0:04] IP: ::1, Username: "' ORDER BY 1-- ", Password: "1", AttackType: Inference / Blind
+[2025-05-13 0:04] IP: ::1, Username: "' UNION SELECT null, null,null, database()--", Password: "1", AttackType: Union-based
+[2025-05-13 0:04] IP: ::1, Username: "' UNION SELECT null, null,database()--", Password: "1", AttackType: Union-based
+[2025-05-13 0:04] IP: ::1, Username: "' UNION SELECT null, Null,database()--", Password: "1", AttackType: Union-based
+[2025-05-13 0:04] IP: ::1, Username: "' UNION SELECT null, NULL, database()--", Password: "1", AttackType: Union-based
+[2025-05-13 0:05] IP: ::1, Username: "' UNION SELECT null, NULL, database()-- ", Password: "1", AttackType: Union-based
+[2025-05-13 0:05] IP: ::1, Username: "' UNION SELECT null, NULL, database()--", Password: "1", AttackType: Union-based
+[2025-05-13 0:05] IP: ::1, Username: "' UNION SELECT null, NULL, database()-- ", Password: "1", AttackType: Union-based
+[2025-05-13 0:06] IP: ::1, Username: "' UNION SELECT null, null,null, database()-- ", Password: "1", AttackType: Union-based
+[2025-05-13 0:06] IP: ::1, Username: "' UNION SELECT null, null,database()-- ", Password: "1", AttackType: Union-based
+[2025-05-13 0:06] IP: ::1, Username: "' UNION SELECT null, null,database()--    ", Password: "1", AttackType: Union-based
+[2025-05-13 0:11] IP: ::1, Username: "' UNION SELECT null, database()--    ", Password: "1", AttackType: Union-based
+[2025-05-13 0:11] IP: ::1, Username: "' UNION SELECT null,null, database()--    ", Password: "1", AttackType: Union-based
+[2025-05-13 0:16] IP: ::1, Username: "' UNION SELECT null,null, database()--    ", Password: "1", AttackType: Union-based
+[2025-05-13 0:19] IP: ::1, Username: "’ AND 1=CONVERT(int, (SELECT @@version))--", Password: "1", AttackType: Inference / Blind
+[2025-05-13 0:19] IP: ::1, Username: "’ AND 1=CONVERT(int, (SELECT @@version))-- ", Password: "1", AttackType: Inference / Blind
+[2025-05-13 0:19] IP: ::1, Username: "’ AND 1=CONVERT(int, (SELECT @@version))-- ", Password: "12", AttackType: Inference / Blind
+[2025-05-13 0:19] IP: ::1, Username: "’ AND 1=1 -- ", Password: "1", AttackType: Tautology
+[2025-05-13 0:19] IP: ::1, Username: "’ AND 1=1 --   ", Password: "1", AttackType: Tautology
+[2025-05-13 0:20] IP: ::1, Username: "admin’; DROP TABLE users; -- ", Password: "1", AttackType: Piggybacked
+[2025-05-13 0:20] IP: ::1, Username: "admin’; DROP TABLE users; --  ", Password: "1", AttackType: Piggybacked
+[2025-05-13 0:20] IP: ::1, Username: "admin’; DROP TABLE users; --", Password: "1", AttackType: Piggybacked
+[2025-05-13 0:21] IP: ::1, Username: "' DROP TABLE users; --", Password: "1", AttackType: Inference / Blind
+[2025-05-13 0:21] IP: ::1, Username: "' DROP TABLE users; -- ", Password: "1", AttackType: Inference / Blind
+[2025-05-13 0:21] IP: ::1, Username: "’ AND 1=2 -- ", Password: "1", AttackType: Inference / Blind
+[2025-05-13 0:22] IP: ::1, Username: "’ UNION SELECT NULL, NULL--  ", Password: "1", AttackType: Union-based
+[2025-05-13 0:22] IP: ::1, Username: "’ UNION SELECT NULL, NULL,a--  ", Password: "1dat", AttackType: Union-based
+[2025-05-13 0:22] IP: ::1, Username: "’ UNION SELECT NULL, NULL,database() --  ", Password: "1dat", AttackType: Union-based
+[2025-05-13 0:22] IP: ::1, Username: "’ UNION SELECT NULL, NULL,database()--  ", Password: "1dat", AttackType: Union-based
+[2025-05-13 0:22] IP: ::1, Username: "’ UNION SELECT NULL, NULL,database()--   ", Password: "1dat", AttackType: Union-based
+[2025-05-13 0:22] IP: ::1, Username: "’UNION SELECT NULL, NULL,database()--   ", Password: "1dat", AttackType: Union-based
+[2025-05-13 0:23] IP: ::1, Username: "’ UNION SELECT NULL, NULL,database()--   ", Password: "1dat", AttackType: Union-based
+[2025-05-13 0:23] IP: ::1, Username: "’UNION SELECT NULL, NULL,database()--   ", Password: "1dat", AttackType: Union-based
+[2025-05-13 0:23] IP: ::1, Username: "` UNION SELECT NULL, NULL,database()--   ", Password: "1dat", AttackType: Union-based
+[2025-05-13 0:23] IP: ::1, Username: "' UNION SELECT NULL, NULL,database()--   ", Password: "1dat", AttackType: Union-based
+[2025-05-13 0:24] IP: ::1, Username: "' UNION SELECT null, null,database()--", Password: "1dat", AttackType: Union-based
+[2025-05-13 0:24] IP: ::1, Username: "'  UNION SELECT null, null,database()-- ", Password: "1dat", AttackType: Union-based
+[2025-05-13 0:48] IP: ::1, Username: "' AND 1=CONVERT(int, (SELECT @@version))-- ", Password: "1", AttackType: Inference / Blind
+[2025-05-13 0:49] IP: ::1, Username: "' AND 1=CONVERT(int, (SELECT @@version))--", Password: "1", AttackType: Inference / Blind
+[2025-05-13 0:50] IP: ::1, Username: "' AND 1=CONCAT(0x3a, (SELECT @@version))-- ", Password: "1", AttackType: Inference / Blind
+[2025-05-13 0:50] IP: ::1, Username: "' AND 1=CONCAT(0x3a, (SELECT @@version))--", Password: "1", AttackType: Inference / Blind
+[2025-05-13 0:51] IP: ::1, Username: "' AND 1=CONCAT(0x3a, (SELECT @@version))--", Password: "1", AttackType: Inference / Blind
+[2025-05-13 0:54] IP: ::1, Username: "' AND 1=CONCAT(0x3a, (SELECT @@version))--", Password: "1", AttackType: Inference / Blind
+[2025-05-13 0:54] IP: ::1, Username: "=;'", Password: "1", AttackType: Inference / Blind
+[2025-05-13 0:56] IP: ::1, Username: "' OR '1'='1'/*", Password: "1", AttackType: Inference / Blind
+[2025-05-13 0:56] IP: ::1, Username: "=-[;'", Password: "1", AttackType: Inference / Blind
+[2025-05-13 2:26] IP: ::1, Username: "admin' or 1 = 1#", Password: "1", AttackType: Tautology
+[2025-05-13 2:27] IP: ::1, Username: "admin' or 1 = 1#", Password: "1", AttackType: Tautology
+[2025-05-13 2:28] IP: ::1, Username: "admin' or 1 = 1#", Password: "1234", AttackType: Tautology
+[2025-05-13 2:29] IP: ::1, Username: "admin' or 1 = 1#", Password: "hii", AttackType: Tautology
+[2025-05-13 2:33] IP: ::1, Username: "admin' or 1 = 1#", Password: "new oe", AttackType: Tautology
+[2025-05-13 2:35] IP: ::1, Username: "admin' or 1 = 1#", Password: "1234", AttackType: Tautology
+[2025-05-13 2:35] IP: ::1, Username: "admin' or 1 = 1#", Password: "123456", AttackType: Tautology
+[2025-05-13 10:29] IP: ::1, Username: "' UNION SELECT null, null, database()-- ", Password: "q23", AttackType: Union-based
+[2025-05-13 10:30] IP: ::1, Username: "’ AND 1=CONVERT(int, (SELECT @@version))--", Password: "q23", AttackType: Inference / Blind
