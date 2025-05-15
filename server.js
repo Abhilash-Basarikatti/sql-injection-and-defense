@@ -180,7 +180,7 @@ app.post('/vuln-login', (req, res) => {
     // }
 
     if (results.length > 0) return res.redirect('/admin/admin.html');
-   // else res.sendFile(path.join(__dirname, 'views', 'login-failed.html'));
+   else res.sendFile(path.join(__dirname, 'views', 'login-failed.html'));
   });
 });
 
