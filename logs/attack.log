@@ -207,3 +207,7 @@
 [2025-05-13 2:35] IP: ::1, Username: "admin' or 1 = 1#", Password: "123456", AttackType: Tautology
 [2025-05-13 10:29] IP: ::1, Username: "' UNION SELECT null, null, database()-- ", Password: "q23", AttackType: Union-based
 [2025-05-13 10:30] IP: ::1, Username: "’ AND 1=CONVERT(int, (SELECT @@version))--", Password: "q23", AttackType: Inference / Blind
+[2025-05-15 0:26] IP: ::1, Username: "admin' or 1 = 1#", Password: "123", AttackType: Tautology
+[2025-05-15 0:28] IP: ::1, Username: "' UNION SELECT null, null,null, database()--", Password: "1", AttackType: Union-based
+[2025-05-24 19:36] IP: ::1, Username: "admin' or 1 = 1#", Password: "123", AttackType: Tautology
+[2025-05-24 19:37] IP: ::1, Username: "admin' or 1 = 1#", Password: "1", AttackType: Tautology
