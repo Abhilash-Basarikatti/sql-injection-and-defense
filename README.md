@@ -39,6 +39,8 @@ cd sql-injection-project
 npm install
 npm start
 ```
+make sure wamp server is running
+---
 ## 🛠️ How to Use the Project
 
 ### ✅ Valid Login (Both Systems)
