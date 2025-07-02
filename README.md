@@ -20,12 +20,12 @@ This project demonstrates both vulnerable and secure login systems to showcase h
 
 | Layer      | Technology            |
 |------------|------------------------|
+| Frontend   | JS, HTML, CSS         |
 | Backend    | Node.js, Express.js    |
 | Database   | MySQL                  |
 | ORM/Security | mysql2 (prepared queries), validator.js |
-| Frontend   | EJS, HTML, CSS         |
-| Logging    | fs, custom middleware  |
-| Dev Tools  | Nodemon, dotenv        |
+
+
 
 ---
 
@@ -38,3 +38,25 @@ git clone https://github.com/yourusername/sql-injection-project.git
 cd sql-injection-project
 npm install
 npm start
+```
+## 🛠️ How to Use the Project
+
+### ✅ Valid Login (Both Systems)
+Username: admin
+Password: admin123
+
+
+### ⚠️ SQL Injection Bypass (Only in Vulnerable)
+
+Test the following inputs in the **vulnerable login page**:
+
+Username: admin' #
+Username: admin' OR '1'='1
+Username: admin' OR 'a'='a
+Username: ' UNION SELECT null, null, database()--
+Username: ' OR ''='
+password:anythinng
+
+
+- ✅ These inputs will **bypass** the login in the vulnerable system due to unsanitized SQL queries.
+- 🔒 They will **fail** in the secure system, which uses **prepared statements** (parameterized queries).
