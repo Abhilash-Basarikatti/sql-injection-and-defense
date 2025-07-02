@@ -29,6 +29,24 @@ This project demonstrates both vulnerable and secure login systems to showcase h
 
 ---
 
+## 🧪 SQL Injection Attack Types – Vulnerable vs. Secure Login System
+
+| S.No | Attack Type                     | Example Payload                                   | Detected (Vulnerable) | Bypassed (Vulnerable) | Detected (Secure) | Bypassed (Secure) |
+|------|----------------------------------|--------------------------------------------------|------------------------|------------------------|--------------------|--------------------|
+| 1    | Comment Injection                | `admin' #`                                       | ✗                      | ✓                      | ✓                  | ✗                  |
+| 2    | Tautology Injection              | `admin' OR 'a'='a`                               | ✗                      | ✓                      | ✓                  | ✗                  |
+| 3    | Tautology Injection              | `admin' OR '1'='1`                               | ✗                      | ✓                      | ✓                  | ✗                  |
+| 4    | Tautology + Comment              | `' OR '1'='1'#`                                  | ✗                      | ✓                      | ✓                  | ✗                  |
+| 5    | Tautology with Empty String      | `admin' OR ''='`                                 | ✗                      | ✓                      | ✓                  | ✗                  |
+| 6    | Numeric Tautology Injection      | `admin' OR 1 = 1#`                               | ✗                      | ✓                      | ✓                  | ✗                  |
+| 7    | Union-Based Injection            | `' UNION SELECT NULL, NULL--`                    | ✗                      | ✓                      | ✓                  | ✗                  |
+| 8    | Error-Based Injection            | `' AND 1=CONVERT(int, (SELECT @@version))--`     | ✗                      | ✗                       | ✓                  | ✗                  |
+| 9    | Blind Boolean Injection (True)   | `' AND 1=1--`                                    | ✗                      | ✗                       | ✓                  | ✗                  |
+| 10   | Blind Boolean Injection (False)  | `' AND 1=2--`                                    | ✗                      | ✗                       | ✓                  | ✗                  |
+| 11   | Time-Based Blind Injection       | `' OR IF(1=1, SLEEP(5), 0)--`                     | ✗                     | ✗                      | ✓                  | ✗                  |
+| 12   | Stacked Queries Injection        | `admin'; DROP TABLE users;--`                    | ✗                      | ✗                      | ✓                  | ✗                  |
+
+
 ## 📦 Setup Locally
 
 To run the project locally:
