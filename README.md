@@ -60,3 +60,19 @@ Test the following inputs in the **vulnerable login page**:
 
 - ✅ These inputs will **bypass** the login in the vulnerable system due to unsanitized SQL queries.
 - 🔒 They will **fail** in the secure system, which uses **prepared statements** (parameterized queries).
+
+---
+### 🌐 Accessing the Application
+
+Once the server is running, you can access the application at:
+
+- 🔓 **Main Page (Both Systems)**  
+  [http://localhost:3000/](http://localhost:3000/)  
+  - Vulnerable Login
+  - Secure Login
+
+- 🧾 **View Logs (Suspicious Inputs)**  
+  [http://localhost:3000/view-logs](http://localhost:3000/view-logs)  
+  → Displays all recorded suspicious login attempts  
+  → Admins can review and block malicious users based on patterns
+
