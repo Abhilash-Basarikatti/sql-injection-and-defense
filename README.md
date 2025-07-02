@@ -52,8 +52,8 @@ This project demonstrates both vulnerable and secure login systems to showcase h
 To run the project locally:
 
 ```bash
-git clone https://github.com/yourusername/sql-injection-project.git
-cd sql-injection-project
+git clone [https://github.com/yourusername/sql-injection-project.git](https://github.com/Abhilash-Basarikatti/sql-injection-and-defense.git)
+cd sql-injection-and-defense
 npm install
 npm start
 ```
